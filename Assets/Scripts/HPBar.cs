@@ -16,6 +16,6 @@ public class HPBar : MonoBehaviour
 	public void UpdateCounter()
 	{
 		Debug.Log("update");
-		text.text = "HP: " + player.stats.HP.ToString() + "/" + player.stats.HPmax.ToString();
+		text.text = "HP: " + player.stats.HP.ToString() + "/" + player.stats.MaxHP.ToString();
 	}
 }

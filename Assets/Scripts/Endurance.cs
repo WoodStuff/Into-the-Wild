@@ -1,14 +1,17 @@
 ﻿using System;
+using UnityEngine;
+
+[Serializable]
 public class Endurance
 {
-	public double HP;
-	public double HPmax;
-	public double SP;
-	public double SPmax;
+	[NonSerialized]	public double HP;
+	public double MaxHP;
+	[NonSerialized]	public double SP;
+	public double MaxSP;
 
 	public Endurance(double H, double S)
 	{
-		HP = HPmax = H;
-		SP = SPmax = S;
+		HP = MaxHP = H;
+		SP = MaxSP = S;
 	}
 }

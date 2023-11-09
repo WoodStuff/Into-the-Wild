@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +14,11 @@ public class MenuManager : MonoBehaviour
 	{
 		mainMenu.SetActive(menu == "main");
 		chapters.SetActive(menu == "chapters");
+	}
+
+	public void GoIntoGame()
+	{
+		SceneManager.LoadScene("Level 1-1");
 	}
     public void QuitGame()
 	{

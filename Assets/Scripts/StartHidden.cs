@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StartHidden : MonoBehaviour
 {
-	public GameObject gameObject;
 	void Start()
 	{
 		gameObject.SetActive(false);

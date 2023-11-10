@@ -9,13 +9,11 @@ public class HPBar : MonoBehaviour
 
 	void Start()
 	{
-		Debug.Log("start");
 		UpdateCounter();
 	}
 
 	public void UpdateCounter()
 	{
-		Debug.Log("update");
 		text.text = "HP: " + player.stats.HP.ToString() + "/" + player.stats.MaxHP.ToString();
 	}
 }

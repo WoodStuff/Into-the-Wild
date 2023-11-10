@@ -1044,7 +1044,6 @@ GameObject:
   - component: {fileID: 1385555933}
   - component: {fileID: 1385555932}
   - component: {fileID: 1385555934}
-  - component: {fileID: 1385555935}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1179,28 +1178,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a55326ceb38f5c48ba8e3c68e24ab32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats:
+    MaxHP: 100
+    MaxSP: 100
   rigid: {fileID: 1385555933}
   weapon: {fileID: 154958101}
+  hpBar: {fileID: 1403510181}
   speed: 1
   jumpHeight: 1.5
   raycastOffset: 0.51
   rayDistance: 0.05
---- !u!114 &1385555935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385555929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4a3d8bc58211e64c88284ca99008373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats:
-    MaxHP: 100
-    MaxSP: 100
-  hpBar: {fileID: 1403510181}
 --- !u!1 &1403510177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1403510179}
-  player: {fileID: 1385555935}
+  player: {fileID: 1385555934}
 --- !u!1001 &1692031302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1479,6 +1466,10 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1490073563898536648, guid: 047aeae95a590ef47a5e187d0bd7c4d9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490073563898536648, guid: 047aeae95a590ef47a5e187d0bd7c4d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
       objectReference: {fileID: 0}
@@ -1516,6 +1507,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490073563898536648, guid: 047aeae95a590ef47a5e187d0bd7c4d9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490073563898536648, guid: 047aeae95a590ef47a5e187d0bd7c4d9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

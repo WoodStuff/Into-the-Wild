@@ -118,3 +118,5 @@ Moving refers to having some velocity.
 
 # Credits
 ChatGPT
+
+![image](https://media.discordapp.net/attachments/1146481600394166293/1172936019876790352/image.png?ex=656220cb&is=654fabcb&hm=4b690583a55bc958b4c162b4a6bfc7649779b686de4b4a251770064435b0b38f&=&width=925&height=244)

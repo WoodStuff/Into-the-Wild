@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Player : Entity
@@ -27,6 +26,12 @@ public class Player : Entity
 
 		if (Input.GetKeyDown(KeyCode.H)) stats.HP--;
 		hpBar.UpdateCounter();
+
+		gameObject.transform.position = new Vector3(
+			(float)Math.Round(gameObject.transform.position.x, 2),
+			(float)Math.Round(gameObject.transform.position.y, 2),
+			0
+		);
 	}
 
 	private bool GroundCheck()
